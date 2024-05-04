@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#root {
+  display: grid;
+  padding-block: 20px;
+  grid-template-areas:
+    "title"
+    "slider";
+  height: 100vh;
+  justify-items: center;
+  grid-template-rows: 100px 1fr;
+  max-width: 100%;
+  align-items: start;
+}
