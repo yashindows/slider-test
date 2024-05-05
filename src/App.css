@@ -3,6 +3,7 @@
   display: flex;
   position: relative;
   max-width: 100%;
+  justify-content: center;
   align-items: center;
   padding-inline: 10px;
   border-radius: 5px;
@@ -24,13 +25,51 @@
 
 button {
   border: none;
-  background-color: transparent;
+  background-color: #00000069;
+  padding: 5px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 34px;
   color: #fff;
+  transition: 0.1s;
 }
 
 h1 {
   grid-area: title;
   text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.btn {
+  background-color: #3e7ef5;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+  text-transform: uppercase;
+}
+
+form {
+  grid-area: form;
+}
+
+input {
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10px;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: #1666fa;
+  }
+  button:hover {
+    background-color: #00000088;
+  }
 }

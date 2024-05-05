@@ -13,10 +13,12 @@ body {
   padding-block: 20px;
   grid-template-areas:
     "title"
-    "slider";
+    "slider"
+    "form";
   height: 100vh;
   justify-items: center;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 60px 450px 100px;
   max-width: 100%;
   align-items: start;
+  gap: 30px;
 }
